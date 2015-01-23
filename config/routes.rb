@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'home_haml/index'
+
   scope :home_good, controller: :home_good, as: :home_good do
     get 'index', as: :index, to: :index
     get 'sidebar', as: :sidebar, to: :sidebar
     get 'setting', as: :setting, to: :setting
+  end
+
+  scope :home_slim, controller: :home_slim, as: :home_slim do
+    get 'index', as: :index, to: :index
   end
 
   scope :home_bad, controller: :home_bad, as: :home_bad do

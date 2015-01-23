@@ -45,3 +45,5 @@ end
 
 
 gem 'dalli'
+gem "slim-rails"
+gem "haml-rails"

@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Slim Exampel
+    = stylesheet_link_tag 'home_good', media: 'all', 'data-turbolinks-track' => true
+
+  %body
+    %nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle.collapsed
+
+    .container-fluid
+      .row.main
+        =yield
+
+    .panel.panel-default
+      .panel-body Panel content
+      .panel-footer Panel footer
+
+    = javascript_include_tag 'home_good', 'data-turbolinks-track' => true, async: true
