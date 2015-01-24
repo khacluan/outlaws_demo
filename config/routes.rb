@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get 'setting', as: :setting, action: :setting
   end
 
+
   scope :home_haml, controller: :home_haml, as: :home_haml do
     get 'index', as: :index, action: :index
     get 'sidebar', as: :sidebar, action: :sidebar

@@ -49,4 +49,6 @@ gem 'redis-namespace'
 gem 'redis-rails'
 gem 'redis-rack-cache'
 
+gem 'dalli'
 gem "slim-rails"
+gem "haml-rails"

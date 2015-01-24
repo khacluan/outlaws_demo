@@ -1,0 +1,2 @@
+module HomeHamlHelper
+end
