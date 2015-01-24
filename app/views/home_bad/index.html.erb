@@ -1,5 +1,5 @@
 <div class="col-sm-3 col-md-2 sidebar">
-  <%= render partial: 'shared/sidebar' %>
+  <%= render partial: 'sidebar' %>
 </div>
 
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -39,7 +39,7 @@
         </tr>
       </thead>
       <tbody>
-        <%= render partial: 'shared/product', collection: @products, as: :product %>
+        <%= render partial: 'product', collection: @products, as: :product %>
       </tbody>
     </table>
   </div>

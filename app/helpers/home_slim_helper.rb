@@ -1,0 +1,2 @@
+module HomeSlimHelper
+end

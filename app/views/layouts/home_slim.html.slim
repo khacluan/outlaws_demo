@@ -1,0 +1,38 @@
+doctype html
+html
+
+  head
+    title Outlaws Demo
+    = stylesheet_link_tag 'home_good', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand OutlawsDemo
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li = link_to 'Dashboard', home_slim_index_path
+            li = link_to 'Settings', home_slim_setting_path
+            li
+              a Profile
+            li
+              a Help
+          form.navbar-form.navbar-right
+            input.form-control
+
+    .container-fluid
+      .row.main
+        == yield
+
+    .panel.panel-default
+      .panel-body Panel content
+      .panel-footer Panel footer
+
+    = javascript_include_tag 'home_good', 'data-turbolinks-track' => true, async: true
