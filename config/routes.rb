@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     get 'index', as: :index, action: :index
     get 'sidebar', as: :sidebar, action: :sidebar
     get 'setting', as: :setting, action: :setting
+    get 'image', as: :image, action: :image
   end
 
   scope :home_slim, controller: :home_slim, as: :home_slim do

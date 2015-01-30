@@ -1,7 +1,11 @@
 @import "_bootstrap_good";
 
+ul, ol {
+  list-style: none;
+}
+
 .main {
-  margin-top: 50px;
+  margin-top: 85px;
 }
 
 .sidebar {
@@ -16,4 +20,34 @@
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   background-color: #f5f5f5;
   border-right: 1px solid #eee;
+}
+
+.disable {
+  display: none;
+}
+
+#img_container {
+  width: 100%;
+  text-align: center;
+
+  .images-view {
+    width: 1600px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    li {
+      float: left;
+      margin-left: 10px;
+
+      div.size {
+        margin-top: 20px;
+        font-weight: bold;
+
+        &.best {
+          color: #c00;
+        }
+      }
+    }
+  }
 }

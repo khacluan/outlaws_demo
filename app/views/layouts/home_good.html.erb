@@ -16,13 +16,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">OutlawsDemo</a>
+        <img src="data:image/jpeg;base64, iVBORw0KGgoAAAANSUhEUgAAACgAAAAMCAYAAAAQw/9NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEcAwUsRfrjMgAAA59JREFUOMullW9M1VUYxz/P/V3gAncmREkR3i7+D4Fo1hBtK5VaS7FZY7XVetFmNOZm+cKSXuTQpbbcXK3lkpKt9QZfaDar2Z9pLVcaa5iWQl3kz1BIQOXKJe69315w2C60paxne/Y7z/M75zzfPef7PQemaZ/fu/SWg7Pn+/mfJmlS3NnR8a/ctO1IeUXw8NySF2+iuEkKpHiaJE+S38UZbl66pMCl3l6bsjZdEpLSfTcDrHXDM1yXPP0dPzAWu77v06LiGy3xAY8B64ABYCdQD7QClUCZpFVAA1Bxe35+YH9Rce2HoUV1nUe/qQJGgQBw1NcwZ7F3o2o5CxZk/LJm+dno+XMvrOv+I1H955n/nG9mCeBr4DUgDMSA5cBbrnAtsB4oBJ4eiUbzlUwGzfO9NLtqRQ/wHXARiPnuTOj9Q6GFct57KLQwkFqs672NmcmhlqvB7L6tNWPXeqbBiE6gDsgE/K7obuBnIB3YB1wBtmcFgxHzvACJxJ72AweLgPPAJqDCdoRLcvKkgTzF5YhQCPSsvfD7+PHWru7zxyLd9+w/c98UnoXc3BNmlpA0EygGfgQMeBU4BVwDuhyYHCAERM3spKQyINftEQO40tmdMaOwYJaZdUoqB2B7uKTyo7uLJ7r4JcDx6prs49XV/d8+MK8fQMnkc5K2SVrrAO7VuL3j4iddnOvEIElL3L9nJRW48W2SalLE8JSkBkk+SXMkbZG0VVLFBJmpj5z+4S/zGofMA3jks/llZZbuHx5sbcuLXvZekTSM2Q6gDGiW1OQ6EgXqJAUcsWPAw8Bh1+hdkmqBRmCJy80DmsxMwEngA2AlsAJoB1Y7IZ2Q9KhvvIOlHMO3vs+8y8MY/qzMloGfWlA8vvvx9t/6gYSZFQD9QMLxww+cdgW+Akbc0UYcIIAjDsRUG5O0EphpZjlmVglsBBrNrNLMqpyo9vjHO9gKkFwaLr3/ki+tzTcw5GUZw13dba8jPY/ZVUmfAA8BM8xszF2q2Y5rA65zBnQA5xyQY8CvbpxMBQgsc8KZsFuB5pT4FDBr0j1YH2mNjEJTn5dGEso3wAhm3wN3AGuAu4DNkvYCcUBmNghsc/dczG0Vd980N04C5SngzOVS638BvCtpsaQsIAhMflp2hksBeDNc+gRAc2jRhGKXSWqTlJR0VtJcSbsktbj/PkkXJA1JynW5N5xQ3pb0oKQeSSOSYm6vLZI+nnj2nL8saVDSqPOL/wBSkxXeM5WceAAAAABJRU5ErkJggg==" />
       </div>
+
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><li><%= link_to 'Dashboard', home_good_index_path %></li></li>
           <li><%= link_to 'Settings', home_good_setting_path %></li>
-          <li><a href="#">Profile</a></li>
+          <li><%= link_to 'Images', home_good_image_path %></li>
           <li><a href="#">Help</a></li>
         </ul>
         <form class="navbar-form navbar-right">
@@ -48,6 +49,6 @@
   </div>
 
 
-  <%= javascript_include_tag 'home_good', 'data-turbolinks-track' => true, async: true %>
+  <%= javascript_include_tag 'home_good', 'data-turbolinks-track' => true, defer: true %>
 </body>
 </html>

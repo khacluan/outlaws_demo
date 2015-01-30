@@ -11,7 +11,6 @@ class HomeGoodController < ApplicationController
     end
 
     @products = JSON.load(@products) if @products.is_a?(String)
-
   end
 
   def sidebar
@@ -19,7 +18,9 @@ class HomeGoodController < ApplicationController
   end
 
   def setting
+  end
 
+  def image
   end
 
 end
